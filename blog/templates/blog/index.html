@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hello</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	{% for item in bm %}
+		<h2>{{item.title}}</h2>
+		{{item.body | safe }}
+	{% endfor %}
+</body>
+</html>
